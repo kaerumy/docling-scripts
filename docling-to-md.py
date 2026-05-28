@@ -1,16 +1,20 @@
 """
-Convert PDF documents to Markdown using Docling, with VLM-generated picture descriptions.
+Convert PDF documents to Markdown using Docling, with VLM-generated picture
+descriptions.
 
-This script uses the Docling document conversion pipeline with a Vision Language Model (VLM)
-to generate detailed descriptions of images/pictures within PDF files. It monkey-patches the
-VLM engine to resize small images before sending them to the model, ensuring the Qwen3.6-35B-
-A3B-MTP model receives images large enough to produce output.
+This script uses the Docling document conversion pipeline with a Vision
+Language Model (VLM) to generate detailed descriptions of images within
+PDF files.
+It monkey-patches the VLM engine to resize small images before sending them
+to the model, ensuring the Qwen3.6-35B-A3B-MTP model receives images large
+enough to produce output.
 
 Usage:
     python docling-to-md.py
 
 Requirements:
-    - A VLM endpoint running at http://10.8.0.210:13305 (configurable via ENDPOINT_URL)
+    - A VLM endpoint running at http://10.8.0.210:13305
+      (configurable via ENDPOINT_URL)
     - test.pdf in the current directory (configurable via SOURCE)
 """
 
@@ -31,17 +35,18 @@ from docling.datamodel.stage_model_specs import VlmEngineType
 from docling_core.types.doc import DocItemLabel
 
 # Monkey-patch BEFORE creating the converter
-from docling.models.stages.picture_description.picture_description_vlm_engine_model import (
-    PictureDescriptionVlmEngineModel,
-    VlmEngineInput,
-)
+from docling.models.stages.picture_description \
+    import picture_description_vlm_engine_model as _pd_vlm_mod
 
-# Qwen3.6-35B-A3B-MTP requires large images and specific conditions to produce output
+# Qwen3.6-35B-A3B-MTP requires large images and specific conditions
+# to produce output
 MIN_IMAGE_SIZE = 2048
 
 
-def _annotate_images_patched(self, images: Iterable[Image.Image]) -> Iterable[str]:
-    """Generate descriptions, using temperature from generation_config and resizing images."""
+def _annotate_images_patched(
+    self, images: Iterable[Image.Image]
+) -> Iterable[str]:
+    """Generate descriptions using temperature from generation_config."""
     if self.engine is None:
         raise RuntimeError("Engine not initialized")
 
@@ -65,11 +70,13 @@ def _annotate_images_patched(self, images: Iterable[Image.Image]) -> Iterable[st
                 scale = MIN_IMAGE_SIZE / max(img.size)
                 new_size = (int(img.width * scale), int(img.height * scale))
                 img = img.resize(new_size, Image.LANCZOS)
-                logging.info(f"Resized image from {original_size} to {img.size}")
+                logging.info(
+                    f"Resized image from {original_size} to {img.size}"
+                )
             resized_images.append(img)
 
         engine_inputs = [
-            VlmEngineInput(
+            _pd_vlm_mod.VlmEngineInput(
                 image=image,
                 prompt=prompt,
                 temperature=temperature,
@@ -90,13 +97,22 @@ def _annotate_images_patched(self, images: Iterable[Image.Image]) -> Iterable[st
             yield ""
 
 
-PictureDescriptionVlmEngineModel._annotate_images = _annotate_images_patched
+_pd_vlm_mod.PictureDescriptionVlmEngineModel._annotate_images = (
+    _annotate_images_patched
+)
 
 ENDPOINT_URL = "http://10.8.0.210:13305/v1/chat/completions"
 MODEL_NAME = "Qwen2.5-VL-7B-Instruct-GGUF"
 SOURCE = Path("test.pdf")
 
-VL_PROMPT = "Describe this image in extreme detail. Identify all objects, people, text, logos, and labels. Describe colors, shapes, positions, and spatial relationships between elements. If there are charts, graphs, or diagrams, explain what they show. If there is text, transcribe it verbatim. Describe the background, setting, lighting, and any notable visual elements. Be thorough and specific."
+VL_PROMPT = (
+    "Describe this image in extreme detail. Identify all objects, "
+    "people, text, logos, and labels. Describe colors, shapes, positions, "
+    "and spatial relationships between elements. If there are charts, graphs, "
+    "or diagrams, explain what they show. If there is text, transcribe it "
+    "verbatim. Describe the background, setting, lighting, and any notable "
+    "visual elements. Be thorough and specific."
+)
 
 
 def build_converter() -> DocumentConverter:
@@ -106,11 +122,17 @@ def build_converter() -> DocumentConverter:
         params={"model": MODEL_NAME},
     )
 
-    picture_description_options = PictureDescriptionVlmEngineOptions.from_preset(
-        "qwen",
-        engine_options=engine_options,
-        prompt=VL_PROMPT,
-        generation_config={"max_new_tokens": 2000, "do_sample": True, "temperature": 0.2},
+    picture_description_options = (
+        PictureDescriptionVlmEngineOptions.from_preset(
+            "qwen",
+            engine_options=engine_options,
+            prompt=VL_PROMPT,
+            generation_config={
+                "max_new_tokens": 2000,
+                "do_sample": True,
+                "temperature": 0.2,
+            },
+        )
     )
 
     pipeline_options = PdfPipelineOptions(
@@ -124,7 +146,9 @@ def build_converter() -> DocumentConverter:
 
     return DocumentConverter(
         format_options={
-            InputFormat.PDF: PdfFormatOption(pipeline_options=pipeline_options),
+            InputFormat.PDF: PdfFormatOption(
+                pipeline_options=pipeline_options
+            ),
         }
     )
 

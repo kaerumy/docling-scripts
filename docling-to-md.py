@@ -1,3 +1,19 @@
+"""
+Convert PDF documents to Markdown using Docling, with VLM-generated picture descriptions.
+
+This script uses the Docling document conversion pipeline with a Vision Language Model (VLM)
+to generate detailed descriptions of images/pictures within PDF files. It monkey-patches the
+VLM engine to resize small images before sending them to the model, ensuring the Qwen3.6-35B-
+A3B-MTP model receives images large enough to produce output.
+
+Usage:
+    python docling-to-md.py
+
+Requirements:
+    - A VLM endpoint running at http://10.8.0.210:13305 (configurable via ENDPOINT_URL)
+    - test.pdf in the current directory (configurable via SOURCE)
+"""
+
 import logging
 from pathlib import Path
 from typing import Iterable

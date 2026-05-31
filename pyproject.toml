@@ -5,7 +5,26 @@ description = "Document conversion scripts using Docling"
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "docling>=2.95.0",
+    "torch==2.11.0+rocm7.2",
+    "torchvision==0.26.0+rocm7.2",
+    "triton-rocm==3.6.0",
 ]
 
 [dependency-groups]
 dev = []
+
+[tool.uv]
+environments = ["sys_platform == 'linux'"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-rocm" }
+torchvision = { index = "pytorch-rocm" }
+triton-rocm = { index = "pytorch-rocm" }
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
+
+[[tool.uv.index]]
+name = "pytorch-rocm"
+url = "https://download-r2.pytorch.org/whl/rocm7.2"

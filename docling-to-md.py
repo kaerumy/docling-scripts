@@ -6,8 +6,8 @@ This script uses the Docling document conversion pipeline with a Vision
 Language Model (VLM) to generate detailed descriptions of images within
 PDF files.
 It monkey-patches the VLM engine to resize small images before sending them
-to the model, ensuring the Qwen3.6-35B-A3B-MTP model receives images large
-enough to produce output.
+to the model, ensuring the Qwen3-VL-8B-Instruct-GGUF model receives images
+large enough to produce output.
 
 Usage:
     python docling-to-md.py <source.pdf>
@@ -38,7 +38,7 @@ from docling_core.types.doc import DocItemLabel
 from docling.models.stages.picture_description \
     import picture_description_vlm_engine_model as _pd_vlm_mod
 
-# Qwen3.6-35B-A3B-MTP requires large images and specific conditions
+# Qwen3-VL-8B-Instruct-GGUF requires large images and specific conditions
 # to produce output
 MIN_IMAGE_SIZE = 2048
 
@@ -102,7 +102,7 @@ _pd_vlm_mod.PictureDescriptionVlmEngineModel._annotate_images = (
 )
 
 ENDPOINT_URL = "http://10.8.0.210:13305/v1/chat/completions"
-MODEL_NAME = "Qwen2.5-VL-7B-Instruct-GGUF"
+MODEL_NAME = "Qwen3-VL-8B-Instruct-GGUF"
 
 VL_PROMPT = (
     "Describe this image in extreme detail. Identify all objects, "

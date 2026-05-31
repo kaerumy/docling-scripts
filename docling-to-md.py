@@ -105,14 +105,9 @@ ENDPOINT_URL = "http://10.8.0.210:13305/v1/chat/completions"
 MODEL_NAME = "Qwen3.6-35B-A3B-MTP-GGUF"
 
 VL_PROMPT = (
-    "Describe this image in extreme detail. Identify all objects, "
-    "people, text, logos, and labels. Describe colors, shapes, positions, "
-    "and spatial relationships between elements. If there are charts, graphs, "
-    "or diagrams, explain what they show. If there is text, transcribe it "
-    "verbatim. Describe the background, setting, lighting, and any notable "
-    "visual elements. Be thorough and specific."
-)
-
+    "Describe this image."
+    "If there are charts, graphs or diagrams, explain what they show."
+    "If there is text, transcribe it verbatim. ")
 
 def build_converter() -> DocumentConverter:
     engine_options = ApiVlmEngineOptions(

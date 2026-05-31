@@ -10,15 +10,15 @@ to the model, ensuring the Qwen3.6-35B-A3B-MTP model receives images large
 enough to produce output.
 
 Usage:
-    python docling-to-md.py
+    python docling-to-md.py <source.pdf>
 
 Requirements:
     - A VLM endpoint running at http://10.8.0.210:13305
       (configurable via ENDPOINT_URL)
-    - test.pdf in the current directory (configurable via SOURCE)
 """
 
 import logging
+import sys
 from pathlib import Path
 from typing import Iterable
 
@@ -103,7 +103,6 @@ _pd_vlm_mod.PictureDescriptionVlmEngineModel._annotate_images = (
 
 ENDPOINT_URL = "http://10.8.0.210:13305/v1/chat/completions"
 MODEL_NAME = "Qwen2.5-VL-7B-Instruct-GGUF"
-SOURCE = Path("test.pdf")
 
 VL_PROMPT = (
     "Describe this image in extreme detail. Identify all objects, "
@@ -154,12 +153,19 @@ def build_converter() -> DocumentConverter:
 
 
 def main():
-    if not SOURCE.exists():
-        print(f"Error: {SOURCE} not found.")
-        return
+    if len(sys.argv) < 2:
+        print(f"Usage: {sys.argv[0]} <source.pdf>")
+        sys.exit(1)
+
+    source = Path(sys.argv[1])
+    output = source.with_suffix(".md")
+
+    if not source.exists():
+        print(f"Error: {source} not found.")
+        sys.exit(1)
 
     converter = build_converter()
-    result = converter.convert(source=str(SOURCE))
+    result = converter.convert(source=str(source))
 
     doc = result.document
 
@@ -177,7 +183,8 @@ def main():
 
     # Export full document as markdown
     md = doc.export_to_markdown()
-    print(md)
+    output.write_text(md, encoding="utf-8")
+    print(f"Written to {output}")
 
 
 if __name__ == "__main__":

@@ -11,12 +11,14 @@ large enough to produce output.
 
 Usage:
     python docling-to-md.py <source.pdf>
+    python docling-to-md.py --embed-images <source.pdf>
 
 Requirements:
     - A VLM endpoint running at http://10.8.0.210:13305
       (configurable via ENDPOINT_URL)
 """
 
+import argparse
 import logging
 import sys
 from pathlib import Path
@@ -32,7 +34,7 @@ from docling.datamodel.pipeline_options import (
 )
 from docling.datamodel.vlm_engine_options import ApiVlmEngineOptions
 from docling.datamodel.stage_model_specs import VlmEngineType
-from docling_core.types.doc import DocItemLabel
+from docling_core.types.doc import DocItemLabel, ImageRefMode
 
 # Monkey-patch BEFORE creating the converter
 from docling.models.stages.picture_description \
@@ -109,34 +111,42 @@ VL_PROMPT = (
     "If there are charts, graphs or diagrams, explain what they show."
     "If there is text, transcribe it verbatim. ")
 
-def build_converter() -> DocumentConverter:
-    engine_options = ApiVlmEngineOptions(
-        engine_type=VlmEngineType.API,
-        url=ENDPOINT_URL,
-        params={"model": MODEL_NAME},
-    )
-
-    picture_description_options = (
-        PictureDescriptionVlmEngineOptions.from_preset(
-            "qwen",
-            engine_options=engine_options,
-            prompt=VL_PROMPT,
-            generation_config={
-                "max_new_tokens": 2000,
-                "do_sample": True,
-                "temperature": 0.2,
-            },
+def build_converter(use_vlm: bool = True) -> DocumentConverter:
+    if use_vlm:
+        engine_options = ApiVlmEngineOptions(
+            engine_type=VlmEngineType.API,
+            url=ENDPOINT_URL,
+            params={"model": MODEL_NAME},
         )
-    )
 
-    pipeline_options = PdfPipelineOptions(
-        generate_page_images=True,
-        generate_picture_images=True,
-        ocr="skip",
-        do_picture_description=True,
-        picture_description_options=picture_description_options,
-        enable_remote_services=True,
-    )
+        picture_description_options = (
+            PictureDescriptionVlmEngineOptions.from_preset(
+                "qwen",
+                engine_options=engine_options,
+                prompt=VL_PROMPT,
+                generation_config={
+                    "max_new_tokens": 2000,
+                    "do_sample": True,
+                    "temperature": 0.2,
+                },
+            )
+        )
+
+        pipeline_options = PdfPipelineOptions(
+            generate_page_images=True,
+            generate_picture_images=True,
+            ocr="skip",
+            do_picture_description=True,
+            picture_description_options=picture_description_options,
+            enable_remote_services=True,
+        )
+    else:
+        pipeline_options = PdfPipelineOptions(
+            generate_page_images=True,
+            generate_picture_images=True,
+            ocr="skip",
+            do_picture_description=False,
+        )
 
     return DocumentConverter(
         format_options={
@@ -148,36 +158,50 @@ def build_converter() -> DocumentConverter:
 
 
 def main():
-    if len(sys.argv) < 2:
-        print(f"Usage: {sys.argv[0]} <source.pdf>")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(
+        description="Convert PDF to Markdown using Docling."
+    )
+    parser.add_argument("source", help="Path to the source PDF file")
+    parser.add_argument(
+        "--embed-images",
+        action="store_true",
+        help=(
+            "Skip VLM picture descriptions and embed images as "
+            "base64 data URIs instead."
+        ),
+    )
+    args = parser.parse_args()
 
-    source = Path(sys.argv[1])
+    source = Path(args.source)
     output = source.with_suffix(".md")
 
     if not source.exists():
         print(f"Error: {source} not found.")
         sys.exit(1)
 
-    converter = build_converter()
-    result = converter.convert(source=str(source))
+    if args.embed_images:
+        converter = build_converter(use_vlm=False)
+        result = converter.convert(source=str(source))
+        doc = result.document
+        md = doc.export_to_markdown(image_mode=ImageRefMode.EMBEDDED)
+    else:
+        converter = build_converter(use_vlm=True)
+        result = converter.convert(source=str(source))
+        doc = result.document
 
-    doc = result.document
-
-    # Print VLM picture descriptions
-    for item, _level in doc.iterate_items():
-        if item.label == DocItemLabel.PICTURE:
-            if item.meta and item.meta.description:
-                desc = item.meta.description.text.strip()
-                if desc:
-                    print(f"[Picture] {desc}\n")
+        for item, _level in doc.iterate_items():
+            if item.label == DocItemLabel.PICTURE:
+                if item.meta and item.meta.description:
+                    desc = item.meta.description.text.strip()
+                    if desc:
+                        print(f"[Picture] {desc}\n")
+                    else:
+                        print("[Picture] (VLM returned empty description)\n")
                 else:
-                    print("[Picture] (VLM returned empty description)\n")
-            else:
-                print("[Picture] No description generated.\n")
+                    print("[Picture] No description generated.\n")
 
-    # Export full document as markdown
-    md = doc.export_to_markdown()
+        md = doc.export_to_markdown()
+
     output.write_text(md, encoding="utf-8")
     print(f"Written to {output}")
 

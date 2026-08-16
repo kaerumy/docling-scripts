@@ -8,12 +8,12 @@ Python 3.12 project. Managed with [`uv`](https://github.com/astral-sh/uv).
 uv venv
 uv sync
 uv pip install --no-deps \
-  "https://download-r2.pytorch.org/whl/rocm7.2/torch-2.11.0%2Brocm7.2-cp312-cp312-manylinux_2_28_x86_64.whl" \
-  "https://download-r2.pytorch.org/whl/rocm7.2/torchvision-0.26.0%2Brocm7.2-cp312-cp312-manylinux_2_28_x86_64.whl"
+  "https://download-r2.pytorch.org/whl/rocm7.2/torch-2.13.0%2Brocm7.2-cp312-cp312-manylinux_2_28_x86_64.whl" \
+  "https://download-r2.pytorch.org/whl/rocm7.2/torchvision-0.28.0%2Brocm7.2-cp312-cp312-manylinux_2_28_x86_64.whl"
 source .venv/bin/activate
 ```
 
-> **Note:** `torch`/`torchvision` ROCm wheels depend on `triton-rocm==3.6.0`, which is not on PyPI. They must be installed separately with `--no-deps` after `uv sync`. `uv sync` alone would pull in the CUDA build of PyTorch, which is incompatible with ROCm.
+> **Note:** `torch`/`torchvision` ROCm wheels depend on `triton-rocm==3.7.1`, which is not on PyPI. They must be installed separately with `--no-deps` after `uv sync`. `uv sync` alone would pull in the CUDA build of PyTorch, which is incompatible with ROCm.
 
 ## Tooling
 

@@ -278,9 +278,9 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "docling", specifier = "==2.120.1" },
-    { name = "torch", specifier = "==2.11.0+rocm7.2", index = "https://download-r2.pytorch.org/whl/rocm7.2" },
-    { name = "torchvision", specifier = "==0.26.0+rocm7.2", index = "https://download-r2.pytorch.org/whl/rocm7.2" },
-    { name = "triton-rocm", specifier = "==3.6.0", index = "https://download-r2.pytorch.org/whl/rocm7.2" },
+    { name = "torch", specifier = "==2.13.0+rocm7.2", index = "https://download-r2.pytorch.org/whl/rocm7.2" },
+    { name = "torchvision", specifier = "==0.28.0+rocm7.2", index = "https://download-r2.pytorch.org/whl/rocm7.2" },
+    { name = "triton-rocm", specifier = "==3.7.1", index = "https://download-r2.pytorch.org/whl/rocm7.2" },
 ]
 
 [package.metadata.requires-dev]
@@ -1358,7 +1358,7 @@ wheels = [
 
 [[package]]
 name = "torch"
-version = "2.11.0+rocm7.2"
+version = "2.13.0+rocm7.2"
 source = { registry = "https://download-r2.pytorch.org/whl/rocm7.2" }
 dependencies = [
     { name = "filelock", marker = "sys_platform == 'linux'" },
@@ -1371,14 +1371,13 @@ dependencies = [
     { name = "typing-extensions", marker = "sys_platform == 'linux'" },
 ]
 wheels = [
-    { url = "https://download-r2.pytorch.org/whl/rocm7.2/torch-2.11.0%2Brocm7.2-cp312-cp312-manylinux_2_28_x86_64.whl", hash = "sha256:8f02a36213288ab5921e277e13f5954cc62afe7cfa899b79d739d4ef2be6510b", upload-time = "2026-04-28T19:44:39Z" },
-    { url = "https://download-r2.pytorch.org/whl/rocm7.2/torch-2.11.0%2Brocm7.2-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:0aea46cd17f648deb3ff590e162a6243a4825765bd0072743960efa9d4a5bc1d", upload-time = "2026-04-28T19:48:30Z" },
-    { url = "https://download-r2.pytorch.org/whl/rocm7.2/torch-2.11.0%2Brocm7.2-cp313-cp313t-manylinux_2_28_x86_64.whl", hash = "sha256:003692fc509f1af32c0aaf77eb3b5d42e82de64be5cf15a4a1b7b9f101a24a3c", upload-time = "2026-04-28T19:52:12Z" },
+    { url = "https://download-r2.pytorch.org/whl/rocm7.2/torch-2.13.0%2Brocm7.2-cp312-cp312-manylinux_2_28_x86_64.whl", upload-time = "2026-07-08T11:26:11Z" },
+    { url = "https://download-r2.pytorch.org/whl/rocm7.2/torch-2.13.0%2Brocm7.2-cp313-cp313-manylinux_2_28_x86_64.whl", upload-time = "2026-07-08T11:26:11Z" },
 ]
 
 [[package]]
 name = "torchvision"
-version = "0.26.0+rocm7.2"
+version = "0.28.0+rocm7.2"
 source = { registry = "https://download-r2.pytorch.org/whl/rocm7.2" }
 dependencies = [
     { name = "numpy", marker = "sys_platform == 'linux'" },
@@ -1386,9 +1385,8 @@ dependencies = [
     { name = "torch", marker = "sys_platform == 'linux'" },
 ]
 wheels = [
-    { url = "https://download-r2.pytorch.org/whl/rocm7.2/torchvision-0.26.0%2Brocm7.2-cp312-cp312-manylinux_2_28_x86_64.whl", hash = "sha256:2d766e7b69bfaf2fc29471ed95727fd19fa7aa88124fcf1f1808fd03bf86f226", upload-time = "2026-03-23T15:36:37Z" },
-    { url = "https://download-r2.pytorch.org/whl/rocm7.2/torchvision-0.26.0%2Brocm7.2-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:51e9bdb4d603b61d4d26be9436ce968daef1492b138753ae610cceb4ad6b5c0c", upload-time = "2026-03-23T15:36:37Z" },
-    { url = "https://download-r2.pytorch.org/whl/rocm7.2/torchvision-0.26.0%2Brocm7.2-cp313-cp313t-manylinux_2_28_x86_64.whl", hash = "sha256:720e0c54d6384223c4678685a0522a8fca367293b646dbdf6bc5b5f804da0f49", upload-time = "2026-03-23T15:36:37Z" },
+    { url = "https://download-r2.pytorch.org/whl/rocm7.2/torchvision-0.28.0%2Brocm7.2-cp312-cp312-manylinux_2_28_x86_64.whl", hash = "sha256:5f54d604f0394075d92f61127ca0e062258b7a5196c267a5a7b67dbee7f034e6", upload-time = "2026-07-08T12:27:02Z" },
+    { url = "https://download-r2.pytorch.org/whl/rocm7.2/torchvision-0.28.0%2Brocm7.2-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:18eee3e079644e07c6d0bbec1be0d6b320df303df2e34cf57d164f931083a8c0", upload-time = "2026-07-08T12:27:03Z" },
 ]
 
 [[package]]
@@ -1483,12 +1481,11 @@ wheels = [
 
 [[package]]
 name = "triton-rocm"
-version = "3.6.0"
+version = "3.7.1"
 source = { registry = "https://download-r2.pytorch.org/whl/rocm7.2" }
 wheels = [
-    { url = "https://download-r2.pytorch.org/whl/triton_rocm-3.6.0-cp312-cp312-linux_x86_64.whl", upload-time = "2026-01-20T18:39:32Z" },
-    { url = "https://download-r2.pytorch.org/whl/triton_rocm-3.6.0-cp313-cp313-linux_x86_64.whl", upload-time = "2026-01-20T18:39:32Z" },
-    { url = "https://download-r2.pytorch.org/whl/triton_rocm-3.6.0-cp313-cp313t-linux_x86_64.whl", upload-time = "2026-01-20T18:39:32Z" },
+    { url = "https://download-r2.pytorch.org/whl/triton_rocm-3.7.1-cp312-cp312-linux_x86_64.whl", hash = "sha256:b200ade2418b8450e4e3e69c33c804e2cc07d1e36dc9678ac8ac1dd65f9e10e1", upload-time = "2026-06-17T17:05:14Z" },
+    { url = "https://download-r2.pytorch.org/whl/triton_rocm-3.7.1-cp313-cp313-linux_x86_64.whl", hash = "sha256:10f87eb1fc3fe4bbad89697c19a4e0cb8dff91e2610bd3c76a9f1fd18850d3f1", upload-time = "2026-06-17T17:05:37Z" },
 ]
 
 [[package]]

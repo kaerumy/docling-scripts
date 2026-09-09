@@ -12,6 +12,7 @@ large enough to produce output.
 Usage:
     python docling-to-md.py <source.pdf>          # embeds images (default)
     python docling-to-md.py --vlm <source.pdf>    # VLM descriptions
+    python docling-to-md.py --disable-ocr <source.pdf>  # disable OCR
 
 Requirements (for --vlm):
     - A VLM endpoint running at http://10.8.0.210:13305
@@ -28,7 +29,7 @@ from docling.datamodel.base_models import InputFormat
 from docling.datamodel.pipeline_options import PdfPipelineOptions
 from docling_core.types.doc import DocItemLabel, ImageRefMode
 
-def build_converter(use_vlm: bool = False) -> DocumentConverter:
+def build_converter(use_vlm: bool = False, use_ocr: bool = True) -> DocumentConverter:
     if use_vlm:
         from typing import Iterable
 
@@ -131,7 +132,7 @@ def build_converter(use_vlm: bool = False) -> DocumentConverter:
         pipeline_options = PdfPipelineOptions(
             generate_page_images=True,
             generate_picture_images=True,
-            ocr="skip",
+            do_ocr=use_ocr,
             do_picture_description=True,
             picture_description_options=picture_description_options,
             enable_remote_services=True,
@@ -140,7 +141,7 @@ def build_converter(use_vlm: bool = False) -> DocumentConverter:
         pipeline_options = PdfPipelineOptions(
             generate_page_images=True,
             generate_picture_images=True,
-            ocr="skip",
+            do_ocr=use_ocr,
             do_picture_description=False,
         )
 
@@ -172,6 +173,11 @@ def main():
         action="store_true",
         help="Use VLM to generate picture descriptions instead of embedding.",
     )
+    parser.add_argument(
+        "--disable-ocr",
+        action="store_true",
+        help="Disable OCR (enabled by default).",
+    )
     args = parser.parse_args()
 
     source = Path(args.source)
@@ -181,8 +187,9 @@ def main():
         print(f"Error: {source} not found.")
         sys.exit(1)
 
+    use_ocr = not args.disable_ocr
     if args.vlm:
-        converter = build_converter(use_vlm=True)
+        converter = build_converter(use_vlm=True, use_ocr=use_ocr)
         result = converter.convert(source=str(source))
         doc = result.document
 
@@ -199,7 +206,7 @@ def main():
 
         md = doc.export_to_markdown()
     else:
-        converter = build_converter(use_vlm=False)
+        converter = build_converter(use_vlm=False, use_ocr=use_ocr)
         result = converter.convert(source=str(source))
         doc = result.document
         md = doc.export_to_markdown(image_mode=ImageRefMode.EMBEDDED)

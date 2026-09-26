@@ -178,19 +178,41 @@ def main():
         action="store_true",
         help="Disable OCR (enabled by default).",
     )
+    parser.add_argument(
+        "--pages",
+        default=None,
+        help="Convert only pages START-END (1-based), writing to <stem>_pSTART-END.md. "
+             "Intended for chunked conversion of large PDFs under memory caps.",
+    )
     args = parser.parse_args()
 
     source = Path(args.source)
-    output = source.with_suffix(".md")
+    if args.pages:
+        try:
+            start, end = (int(x) for x in args.pages.split("-"))
+            if start < 1 or end < start:
+                raise ValueError
+        except ValueError:
+            print(f"Error: --pages must be START-END with 1<=START<=END (got {args.pages!r}).")
+            sys.exit(1)
+        output = source.with_name(f"{source.stem}_p{start}-{end}.md")
+    else:
+        start = end = None
+        output = source.with_suffix(".md")
 
     if not source.exists():
         print(f"Error: {source} not found.")
         sys.exit(1)
 
     use_ocr = not args.disable_ocr
+
+    page_range = (start, end) if start else None
+
+    page_kwargs = {"page_range": page_range} if page_range else {}
+
     if args.vlm:
         converter = build_converter(use_vlm=True, use_ocr=use_ocr)
-        result = converter.convert(source=str(source))
+        result = converter.convert(source=str(source), **page_kwargs)
         doc = result.document
 
         for item, _level in doc.iterate_items():
@@ -207,7 +229,7 @@ def main():
         md = doc.export_to_markdown()
     else:
         converter = build_converter(use_vlm=False, use_ocr=use_ocr)
-        result = converter.convert(source=str(source))
+        result = converter.convert(source=str(source), **page_kwargs)
         doc = result.document
         md = doc.export_to_markdown(image_mode=ImageRefMode.EMBEDDED)
 

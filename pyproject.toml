@@ -2,12 +2,12 @@
 name = "docling-scripts"
 version = "0.1.0"
 description = "Document conversion scripts using Docling"
-requires-python = ">=3.12,<3.14"
+requires-python = ">=3.14,<3.15"
 dependencies = [
-    "docling==2.120.1",
-    "torch==2.13.0+rocm7.2",
-    "torchvision==0.28.0+rocm7.2",
-    "triton-rocm==3.7.1",
+    "docling==2.130.0",
+    "torch[device-all]==2.13.0+rocm10.0.0",
+    "torchvision[device-all]==0.28.0+rocm10.0.0",
+    "torchaudio==2.11.0.2+rocm10.0.0",
 ]
 
 [dependency-groups]
@@ -15,16 +15,19 @@ dev = []
 
 [tool.uv]
 environments = ["sys_platform == 'linux'"]
+index-strategy = "unsafe-best-match"
 
 [tool.uv.sources]
-torch = { index = "pytorch-rocm" }
-torchvision = { index = "pytorch-rocm" }
-triton-rocm = { index = "pytorch-rocm" }
+torch = { index = "amd-rocm" }
+torchvision = { index = "amd-rocm" }
+torchaudio = { index = "amd-rocm" }
+triton = { index = "amd-rocm" }
+rocm = { index = "amd-rocm" }
 
 [[tool.uv.index]]
 name = "pypi"
 url = "https://pypi.org/simple"
 
 [[tool.uv.index]]
-name = "pytorch-rocm"
-url = "https://download-r2.pytorch.org/whl/rocm7.2"
+name = "amd-rocm"
+url = "https://stable.repo.amd.com/rocm/whl-next/"

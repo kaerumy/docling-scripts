@@ -1,19 +1,16 @@
 # docling-scripts
 
-Python 3.12 project. Managed with [`uv`](https://github.com/astral-sh/uv).
+Python 3.14 project. Managed with [`uv`](https://github.com/astral-sh/uv).
 
 ## Setup
 
 ```
-uv venv
+uv venv --python 3.14
 uv sync
-uv pip install --no-deps \
-  "https://download-r2.pytorch.org/whl/rocm7.2/torch-2.13.0%2Brocm7.2-cp312-cp312-manylinux_2_28_x86_64.whl" \
-  "https://download-r2.pytorch.org/whl/rocm7.2/torchvision-0.28.0%2Brocm7.2-cp312-cp312-manylinux_2_28_x86_64.whl"
 source .venv/bin/activate
 ```
 
-> **Note:** `torch`/`torchvision` ROCm wheels depend on `triton-rocm==3.7.1`, which is not on PyPI. They must be installed separately with `--no-deps` after `uv sync`. `uv sync` alone would pull in the CUDA build of PyTorch, which is incompatible with ROCm.
+> **Note:** PyTorch comes from AMD's ROCm 10 wheel index (`https://stable.repo.amd.com/rocm/whl-next/`) via `[tool.uv.sources]`, per the [AMD install docs](https://rocm.docs.amd.com/) — PyPI only hosts CUDA builds. The `index-strategy = "unsafe-best-match"` setting is required: AMD's `torch` depends on `rocm`, `triton`, and `amd-torch-device-*` packages, and since `rocm`/`triton` also exist on PyPI, uv's default `first-index` strategy would resolve them to the incompatible PyPI versions. `uv sync` handles everything; no manual wheel installation is needed.
 
 ## Tooling
 

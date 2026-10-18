@@ -5,9 +5,9 @@ description = "Document conversion scripts using Docling"
 requires-python = ">=3.14,<3.15"
 dependencies = [
     "docling==2.140.0",
-    "torch[device-all]==2.13.0+rocm10.0.0",
-    "torchvision[device-all]==0.28.0+rocm10.0.0",
-    "torchaudio==2.11.0.2+rocm10.0.0",
+    "torch[device-all]==2.13.0+rocm10.1.0",
+    "torchvision[device-all]==0.28.0+rocm10.1.0",
+    "torchaudio==2.11.0.3+rocm10.1.0",
 ]
 
 [dependency-groups]

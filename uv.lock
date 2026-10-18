@@ -28,635 +28,635 @@ wheels = [
 
 [[package]]
 name = "amd-torch-device-gfx1010"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1010" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1010/amd_torch_device_gfx1010-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1010/amd_torch_device_gfx1010-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1011"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1011" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1011/amd_torch_device_gfx1011-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1011/amd_torch_device_gfx1011-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1012"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1012" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1012/amd_torch_device_gfx1012-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1012/amd_torch_device_gfx1012-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1030"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1030" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1030/amd_torch_device_gfx1030-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1030/amd_torch_device_gfx1030-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1031"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1031" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1031/amd_torch_device_gfx1031-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1031/amd_torch_device_gfx1031-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1032"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1032" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1032/amd_torch_device_gfx1032-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1032/amd_torch_device_gfx1032-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1033"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1033" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1033/amd_torch_device_gfx1033-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1033/amd_torch_device_gfx1033-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1034"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1034" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1034/amd_torch_device_gfx1034-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1034/amd_torch_device_gfx1034-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1035"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1035" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1035/amd_torch_device_gfx1035-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1035/amd_torch_device_gfx1035-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1036"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1036" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1036/amd_torch_device_gfx1036-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1036/amd_torch_device_gfx1036-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1100"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1100" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1100/amd_torch_device_gfx1100-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1100/amd_torch_device_gfx1100-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1101"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1101" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1101/amd_torch_device_gfx1101-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1101/amd_torch_device_gfx1101-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1102"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1102" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1102/amd_torch_device_gfx1102-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1102/amd_torch_device_gfx1102-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1103"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1103" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1103/amd_torch_device_gfx1103-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1103/amd_torch_device_gfx1103-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx110x"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx110x/amd_torch_device_gfx110x-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx110x/amd_torch_device_gfx110x-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1150"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1150" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1150/amd_torch_device_gfx1150-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1150/amd_torch_device_gfx1150-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1151"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1151" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1151/amd_torch_device_gfx1151-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1151/amd_torch_device_gfx1151-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1152"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1152" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1152/amd_torch_device_gfx1152-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1152/amd_torch_device_gfx1152-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1153"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1153" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1153/amd_torch_device_gfx1153-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1153/amd_torch_device_gfx1153-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx115x"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx115x/amd_torch_device_gfx115x-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx115x/amd_torch_device_gfx115x-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx12-0"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx12-0/amd_torch_device_gfx12_0-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx12-0/amd_torch_device_gfx12_0-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1200"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1200" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1200/amd_torch_device_gfx1200-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1200/amd_torch_device_gfx1200-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1201"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1201" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1201/amd_torch_device_gfx1201-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1201/amd_torch_device_gfx1201-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx1250"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1250" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1250/amd_torch_device_gfx1250-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx1250/amd_torch_device_gfx1250-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx908"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx908" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx908/amd_torch_device_gfx908-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx908/amd_torch_device_gfx908-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx90a"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx90a" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx90a/amd_torch_device_gfx90a-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx90a/amd_torch_device_gfx90a-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx942"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx942" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx942/amd_torch_device_gfx942-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx942/amd_torch_device_gfx942-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torch-device-gfx950"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx950" },
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx950/amd_torch_device_gfx950-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torch-device-gfx950/amd_torch_device_gfx950-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1010"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1010" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1010/amd_torchvision_device_gfx1010-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1010/amd_torchvision_device_gfx1010-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1011"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1011" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1011/amd_torchvision_device_gfx1011-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1011/amd_torchvision_device_gfx1011-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1012"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1012" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1012/amd_torchvision_device_gfx1012-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1012/amd_torchvision_device_gfx1012-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1030"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1030" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1030/amd_torchvision_device_gfx1030-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1030/amd_torchvision_device_gfx1030-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1031"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1031" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1031/amd_torchvision_device_gfx1031-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1031/amd_torchvision_device_gfx1031-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1032"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1032" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1032/amd_torchvision_device_gfx1032-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1032/amd_torchvision_device_gfx1032-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1033"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1033" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1033/amd_torchvision_device_gfx1033-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1033/amd_torchvision_device_gfx1033-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1034"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1034" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1034/amd_torchvision_device_gfx1034-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1034/amd_torchvision_device_gfx1034-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1035"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1035" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1035/amd_torchvision_device_gfx1035-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1035/amd_torchvision_device_gfx1035-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1036"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1036" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1036/amd_torchvision_device_gfx1036-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1036/amd_torchvision_device_gfx1036-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1100"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1100" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1100/amd_torchvision_device_gfx1100-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1100/amd_torchvision_device_gfx1100-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1101"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1101" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1101/amd_torchvision_device_gfx1101-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1101/amd_torchvision_device_gfx1101-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1102"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1102" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1102/amd_torchvision_device_gfx1102-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1102/amd_torchvision_device_gfx1102-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1103"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1103" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1103/amd_torchvision_device_gfx1103-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1103/amd_torchvision_device_gfx1103-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1150"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1150" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1150/amd_torchvision_device_gfx1150-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1150/amd_torchvision_device_gfx1150-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1151"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1151" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1151/amd_torchvision_device_gfx1151-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1151/amd_torchvision_device_gfx1151-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1152"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1152" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1152/amd_torchvision_device_gfx1152-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1152/amd_torchvision_device_gfx1152-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1153"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1153" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1153/amd_torchvision_device_gfx1153-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1153/amd_torchvision_device_gfx1153-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1200"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1200" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1200/amd_torchvision_device_gfx1200-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1200/amd_torchvision_device_gfx1200-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1201"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1201" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1201/amd_torchvision_device_gfx1201-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1201/amd_torchvision_device_gfx1201-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx1250"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx1250" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1250/amd_torchvision_device_gfx1250-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx1250/amd_torchvision_device_gfx1250-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx908"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx908" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx908/amd_torchvision_device_gfx908-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx908/amd_torchvision_device_gfx908-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx90a"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx90a" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx90a/amd_torchvision_device_gfx90a-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx90a/amd_torchvision_device_gfx90a-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx942"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx942" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx942/amd_torchvision_device_gfx942-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx942/amd_torchvision_device_gfx942-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "amd-torchvision-device-gfx950"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-device-gfx950" },
     { name = "torchvision" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx950/amd_torchvision_device_gfx950-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/amd-torchvision-device-gfx950/amd_torchvision_device_gfx950-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
@@ -903,9 +903,9 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "docling", specifier = "==2.140.0" },
-    { name = "torch", extras = ["device-all"], specifier = "==2.13.0+rocm10.0.0", index = "https://stable.repo.amd.com/rocm/whl-next/" },
-    { name = "torchaudio", specifier = "==2.11.0.2+rocm10.0.0", index = "https://stable.repo.amd.com/rocm/whl-next/" },
-    { name = "torchvision", extras = ["device-all"], specifier = "==0.28.0+rocm10.0.0", index = "https://stable.repo.amd.com/rocm/whl-next/" },
+    { name = "torch", extras = ["device-all"], specifier = "==2.13.0+rocm10.1.0", index = "https://stable.repo.amd.com/rocm/whl-next/" },
+    { name = "torchaudio", specifier = "==2.11.0.3+rocm10.1.0", index = "https://stable.repo.amd.com/rocm/whl-next/" },
+    { name = "torchvision", extras = ["device-all"], specifier = "==0.28.0+rocm10.1.0", index = "https://stable.repo.amd.com/rocm/whl-next/" },
 ]
 
 [package.metadata.requires-dev]
@@ -1735,12 +1735,12 @@ wheels = [
 
 [[package]]
 name = "rocm"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-core" },
 ]
-sdist = { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm/rocm-10.0.0.tar.gz" }
+sdist = { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm/rocm-10.1.0.tar.gz" }
 
 [package.optional-dependencies]
 libraries = [
@@ -1757,293 +1757,293 @@ wheels = [
 
 [[package]]
 name = "rocm-sdk-core"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-core/rocm_sdk_core-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-core/rocm_sdk_core-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1010"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1010/rocm_sdk_device_gfx1010-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1010/rocm_sdk_device_gfx1010-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1011"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1011/rocm_sdk_device_gfx1011-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1011/rocm_sdk_device_gfx1011-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1012"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1012/rocm_sdk_device_gfx1012-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1012/rocm_sdk_device_gfx1012-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1030"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1030/rocm_sdk_device_gfx1030-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1030/rocm_sdk_device_gfx1030-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1031"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1031/rocm_sdk_device_gfx1031-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1031/rocm_sdk_device_gfx1031-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1032"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1032/rocm_sdk_device_gfx1032-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1032/rocm_sdk_device_gfx1032-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1033"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1033/rocm_sdk_device_gfx1033-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1033/rocm_sdk_device_gfx1033-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1034"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1034/rocm_sdk_device_gfx1034-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1034/rocm_sdk_device_gfx1034-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1035"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1035/rocm_sdk_device_gfx1035-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1035/rocm_sdk_device_gfx1035-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1036"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1036/rocm_sdk_device_gfx1036-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1036/rocm_sdk_device_gfx1036-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1100"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1100/rocm_sdk_device_gfx1100-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1100/rocm_sdk_device_gfx1100-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1101"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1101/rocm_sdk_device_gfx1101-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1101/rocm_sdk_device_gfx1101-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1102"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1102/rocm_sdk_device_gfx1102-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1102/rocm_sdk_device_gfx1102-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1103"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1103/rocm_sdk_device_gfx1103-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1103/rocm_sdk_device_gfx1103-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1150"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1150/rocm_sdk_device_gfx1150-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1150/rocm_sdk_device_gfx1150-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1151"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1151/rocm_sdk_device_gfx1151-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1151/rocm_sdk_device_gfx1151-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1152"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1152/rocm_sdk_device_gfx1152-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1152/rocm_sdk_device_gfx1152-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1153"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1153/rocm_sdk_device_gfx1153-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1153/rocm_sdk_device_gfx1153-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1200"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1200/rocm_sdk_device_gfx1200-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1200/rocm_sdk_device_gfx1200-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1201"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1201/rocm_sdk_device_gfx1201-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1201/rocm_sdk_device_gfx1201-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx1250"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1250/rocm_sdk_device_gfx1250-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx1250/rocm_sdk_device_gfx1250-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx908"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx908/rocm_sdk_device_gfx908-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx908/rocm_sdk_device_gfx908-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx90a"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx90a/rocm_sdk_device_gfx90a-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx90a/rocm_sdk_device_gfx90a-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx942"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx942/rocm_sdk_device_gfx942-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx942/rocm_sdk_device_gfx942-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-device-gfx950"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "rocm-sdk-libraries" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx950/rocm_sdk_device_gfx950-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-device-gfx950/rocm_sdk_device_gfx950-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "rocm-sdk-libraries"
-version = "10.0.0"
+version = "10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-libraries/rocm_sdk_libraries-10.0.0-py3-none-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/core/whl-next/rocm-sdk-libraries/rocm_sdk_libraries-10.1.0-py3-none-linux_x86_64.whl" },
 ]
 
 [[package]]
@@ -2242,7 +2242,7 @@ wheels = [
 
 [[package]]
 name = "torch"
-version = "2.13.0+rocm10.0.0"
+version = "2.13.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "filelock" },
@@ -2257,7 +2257,7 @@ dependencies = [
     { name = "typing-extensions" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/torch/torch-2.13.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/torch/torch-2.13.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [package.optional-dependencies]
@@ -2294,15 +2294,15 @@ device-all = [
 
 [[package]]
 name = "torchaudio"
-version = "2.11.0.2+rocm10.0.0"
+version = "2.11.0.3+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/torchaudio/torchaudio-2.11.0.2%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/torchaudio/torchaudio-2.11.0.3%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
 name = "torchvision"
-version = "0.28.0+rocm10.0.0"
+version = "0.28.0+rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 dependencies = [
     { name = "numpy" },
@@ -2311,7 +2311,7 @@ dependencies = [
     { name = "torch" },
 ]
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/torchvision/torchvision-0.28.0%2Brocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/torchvision/torchvision-0.28.0%2Brocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [package.optional-dependencies]
@@ -2432,10 +2432,10 @@ wheels = [
 
 [[package]]
 name = "triton"
-version = "3.8.0+git4cff872c.rocm10.0.0"
+version = "3.8.0+git669b31ac.rocm10.1.0"
 source = { registry = "https://stable.repo.amd.com/rocm/whl-next/" }
 wheels = [
-    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/triton/triton-3.8.0%2Bgit4cff872c.rocm10.0.0-cp314-cp314-linux_x86_64.whl" },
+    { url = "https://stable.repo.amd.com/rocm/pytorch/whl-next/triton/triton-3.8.0%2Bgit669b31ac.rocm10.1.0-cp314-cp314-linux_x86_64.whl" },
 ]
 
 [[package]]
